@@ -12,4 +12,14 @@ export default [
       'no-undef': 'error',
     },
   },
+  {
+    files: ['*.json'],
+    languageOptions: { globals: globals.node },
+    parser: 'jsonc-eslint-parser',
+    rules: {
+      semi: 'off',
+      'no-unused-vars': 'off',
+      'no-undef': 'off',
+    },
+  },
 ];
